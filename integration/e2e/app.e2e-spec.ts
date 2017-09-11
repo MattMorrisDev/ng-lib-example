@@ -15,7 +15,7 @@ describe('QuickStart Lib E2E Tests', function () {
   });
 
   it('should display meaning', () => {
-    expect(element(by.css('h3')).getText()).toEqual('Meaning is: 42');
+    expect(element(by.css('h3')).getText()).toEqual('Meaning is: 44');
   });
 
 });
