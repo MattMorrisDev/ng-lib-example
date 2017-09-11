@@ -27,6 +27,7 @@
     "pretest": "npm run build-test",
     "test": "concurrently \"npm run build-test:watch\" \"karma start karma.conf.js\"",
     "coverage": "karma start karma-coverage.conf.js --single-run",
+    "preprotractor": "webdriver-manager update --gecko false",
     "pretest:once": "npm run build-test",
     "test:once": "karma start karma.conf.js --single-run",
     "preintegration": "npm run build && cd integration && npm run clean && npm install",
