@@ -18,3 +18,9 @@ script:
   - yarn test:once
   - yarn integration
   - yarn coverage
+
+deploy:
+  - '[[ $TRAVIS_BRANCH == "master" ]]'
+  - npm publish dist/
+  on:
+    tags: true
