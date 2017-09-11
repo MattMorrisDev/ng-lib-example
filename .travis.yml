@@ -20,7 +20,11 @@ script:
   - yarn coverage
 
 deploy:
-  - '[[ $TRAVIS_BRANCH == "master" ]]'
-  - npm publish dist/
+  provider: npm
+  email: matt.m.morris0@gmail.com
+  api_key:
+    secure: $NPM_API_KEY
   on:
     tags: true
+    branch: master
+    repo: MattMorrisDev/ng-lib-example
