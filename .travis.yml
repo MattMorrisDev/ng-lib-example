@@ -18,3 +18,13 @@ script:
   - yarn test:once
   - yarn integration
   - yarn coverage
+
+deploy:
+  provider: npm
+  email: matt.m.morris0@gmail.com
+  api_key:
+    secure: $NPM_API_KEY
+  on:
+    tags: true
+    branch: master
+    repo: MattMorrisDev/ng-lib-example
