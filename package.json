@@ -30,7 +30,7 @@
     "preprotractor": "webdriver-manager update --gecko false",
     "pretest:once": "npm run build-test",
     "test:once": "karma start karma.conf.js --single-run",
-    "preintegration": "npm run build && cd integration && npm run clean && npm install",
+    "preintegration": "npm run build && cd integration && npm run clean && npm install && webdriver-manager update --gecko false",
     "integration": "npm run integration:aot && npm run integration:jit",
     "integration:jit": "cd integration && npm run e2e",
     "integration:aot": "cd integration && npm run e2e:aot",
